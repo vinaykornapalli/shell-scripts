@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Enter first number"
+read first
+echo "Enter second number"
+read sec
+echo "Enter third number"
+read third
+
+if [ $first -gt $sec ] ; then
+if [ $first -gt $third ] ; then
+$big=$first
+else
+big=$third
+fi
+else
+if [ $sec -gt $third ] ; then
+big=$sec
+else
+big=$third
+fi
+fi
+
+echo "$big is the largest of the three"
+

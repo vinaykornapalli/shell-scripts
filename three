@@ -1,0 +1,21 @@
+#!bin/bash
+
+file1="file1.txt"
+file2="file2.txt"
+
+
+if [ -e "$file1" ]; then
+  
+   if [ -e "$file2" ]; then
+        
+       echo "both files exists"
+       cat $file1 $file2 > file3.txt | sort ;
+       cat file3.txt
+   else
+       echo "file2 doesnot exist"
+   fi
+else
+   echo "file one doesnot exist"
+
+fi    
+

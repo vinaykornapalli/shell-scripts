@@ -1,0 +1,11 @@
+read file
+
+if [ -e "$file" ] ; then
+    echo "file found"
+    chmod 755 "$file"
+    echo "hello world" >> "$file"
+    cat "$file"
+    ls -l
+else
+echo "file not found"
+fi

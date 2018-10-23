@@ -1,0 +1,16 @@
+echo "Enter the number"
+read n
+fact=1
+
+if [ $n -le 0 ] ; then
+echo " Invalid number "
+exit
+fi
+
+for((i=$n;i>=1;i--))
+do
+fact=`expr $fact \* $i`
+done
+
+echo "The factorial of $n is $fact"
+

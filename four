@@ -1,0 +1,4 @@
+find ./ -name '*.txt' -exec cp -prv '{}' '/home/vinaycr7/files/' ';'
+find ./ -name '?p*' -exec cp -prv '{}' '/home/vinaycr7/files/' ';'
+
+
